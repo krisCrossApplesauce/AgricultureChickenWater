@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var offsetX: CGFloat = 0.0
+    @State var direction = 1
     
     var body: some View {
         ZStack {
@@ -23,7 +24,7 @@ struct ContentView: View {
             
             
             ZStack {
-                Image("flyingChicken")
+                Image("flyingChicken\(direction)")
                     .resizable()
                     .frame(width: 100.0, height: 100.0)
             }
@@ -34,34 +35,28 @@ struct ContentView: View {
             
             HStack {
                 Button(action: {
-                    offsetX -= 10
+                    offsetX -= 10;
+                    direction = 2
                 }) {
-                    Text("<")
+                    Text("")
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding(5)
-                        .padding(.horizontal, 7)
-                        .background(Color.white)
-                        .cornerRadius(10)
+                        .frame(width: 200, height: 900)
                 }
                 
                 Spacer()
                 
                 Button(action: {
-                    offsetX += 10
+                    offsetX += 10;
+                    direction = 1
                 }) {
-                    Text(">")
+                    Text("")
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding(5)
-                        .padding(.horizontal, 7)
-                        .background(Color.white)
-                        .cornerRadius(10)
+                        .frame(width: 200, height: 900)
                 }
             }
             .foregroundColor(.red)
-            .padding(.horizontal, 60)
-            .offset(y: 100)
             
             
         }

@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct AgricultureView: View {
+struct WaterView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Circle()
+            .frame(width: 10)
+            .foregroundColor(.blue)
+            
     }
 }
 
-struct AgricultureView_Previews: PreviewProvider {
+struct WaterView_Previews: PreviewProvider {
     static var previews: some View {
-        AgricultureView()
+        WaterView()
     }
 }
