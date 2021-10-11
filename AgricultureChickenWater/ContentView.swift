@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State var offsetX: CGFloat = 0.0
+    @State var direction = 1
+    @State var offsetY: CGFloat = -445.0
     
     var body: some View {
         ZStack {
@@ -21,9 +23,8 @@ struct ContentView: View {
                 .offset(y: 245)
             
             
-            
             ZStack {
-                Image("flyingChicken")
+                Image("flyingChicken\(direction)")
                     .resizable()
                     .frame(width: 100.0, height: 100.0)
             }
@@ -31,37 +32,32 @@ struct ContentView: View {
             
             
             
+            WaterView(offsetY: offsetY)
+            
+            
+            
             
             HStack {
                 Button(action: {
                     offsetX -= 10
+                    direction = 2
                 }) {
-                    Text("<")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(5)
-                        .padding(.horizontal, 7)
-                        .background(Color.white)
-                        .cornerRadius(10)
+                    Text("")
+                        .padding(.vertical, 445)
+                        .padding(.horizontal, 100)
                 }
                 
                 Spacer()
                 
                 Button(action: {
                     offsetX += 10
+                    direction = 1
                 }) {
-                    Text(">")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(5)
-                        .padding(.horizontal, 7)
-                        .background(Color.white)
-                        .cornerRadius(10)
+                    Text("")
+                        .padding(.vertical, 445)
+                        .padding(.horizontal, 100)
                 }
             }
-            .foregroundColor(.red)
-            .padding(.horizontal, 60)
-            .offset(y: 100)
             
             
         }

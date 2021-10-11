@@ -11,7 +11,7 @@
 		7239ACDE2710B38D0098A31B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239ACDD2710B38D0098A31B /* ContentView.swift */; };
 		7239ACE02710B38E0098A31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7239ACDF2710B38E0098A31B /* Assets.xcassets */; };
 		7239ACE32710B38E0098A31B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7239ACE22710B38E0098A31B /* Preview Assets.xcassets */; };
-		7239ACEC2710B6580098A31B /* AgricultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239ACEB2710B6580098A31B /* AgricultureView.swift */; };
+		7239ACEC2710B6580098A31B /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239ACEB2710B6580098A31B /* WaterView.swift */; };
 		7239ACEE2710C2E80098A31B /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239ACED2710C2E80098A31B /* OpeningView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		7239ACDD2710B38D0098A31B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7239ACDF2710B38E0098A31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7239ACE22710B38E0098A31B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7239ACEB2710B6580098A31B /* AgricultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgricultureView.swift; sourceTree = "<group>"; };
+		7239ACEB2710B6580098A31B /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 		7239ACED2710C2E80098A31B /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 				7239ACDB2710B38D0098A31B /* AgricultureChickenWaterApp.swift */,
 				7239ACDD2710B38D0098A31B /* ContentView.swift */,
 				7239ACED2710C2E80098A31B /* OpeningView.swift */,
-				7239ACEB2710B6580098A31B /* AgricultureView.swift */,
+				7239ACEB2710B6580098A31B /* WaterView.swift */,
 				7239ACDF2710B38E0098A31B /* Assets.xcassets */,
 				7239ACE12710B38E0098A31B /* Preview Content */,
 			);
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7239ACDE2710B38D0098A31B /* ContentView.swift in Sources */,
-				7239ACEC2710B6580098A31B /* AgricultureView.swift in Sources */,
+				7239ACEC2710B6580098A31B /* WaterView.swift in Sources */,
 				7239ACDC2710B38D0098A31B /* AgricultureChickenWaterApp.swift in Sources */,
 				7239ACEE2710C2E80098A31B /* OpeningView.swift in Sources */,
 			);
